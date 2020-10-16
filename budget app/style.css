@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Slabo 27px', serif;
+}
+
+.app{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.app::after{
+    content: "";
+    background-image: url(imgs/back-img.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#app{
+    width: 800px;
+    height: 100vh;
+    background-color: rgb(228, 135, 28);
+    padding: 0px 20px;
+}
+
+h1{
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.li{
+    margin: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.li-span{
+    float: right;
+}
+
+.submit-btn,
+.total-btn{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5px 50px;
+    padding: 0px 10px;
+    background-color: royalblue;
+    outline: none;
+}
+
+#todoForm{
+    margin-top: 15px;
+}
+
+#input,
+#budget,
+#price{
+    width: 250px;
+    height: 30px;
+    border: solid  rgb(240, 234, 204);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+}
+
+#container{
+    width: 450px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 500px){
+    #container{
+        width: 250px;
+        margin-left: 50px;
+    }
+    .submit-btn,
+    .total-btn{
+    font-size: 17px;
+    margin: 5px 30px;
+    padding: 0px 10px;
+    background-color: rgb(65, 214, 225);
+    outline: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
